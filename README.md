@@ -32,7 +32,7 @@ This implementation is based on [soft-filter-pruning](https://github.com/he-y/so
 ## Models and log files
 The trained models with log files can be found in [Google Drive](https://drive.google.com/drive/folders/1lPhInbd7v3HjK9uOPW_VNjGWWm7kyS8e?usp=sharing).
 
-The pruned model without zeros: [Release page](https://github.com/he-y/soft-filter-pruning/releases/tag/ResNet50_pruned).
+The pruned model without zeros (Release later).
 
 ## Training ResNet on ImageNet
 
