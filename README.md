@@ -1,6 +1,6 @@
 # Filter Pruning via Geometric Median for Deep Convolutional Neural Networks Acceleration
 
-**[CVPR 2019 Oral](https://arxiv.org/abs/1811.00250)**. Implementation with PyTorch.
+Implementation with PyTorch.
 
 This implementation is based on [soft-filter-pruning](https://github.com/he-y/soft-filter-pruning).
 
