@@ -1,8 +1,10 @@
 # Filter Pruning via Geometric Median for Deep Convolutional Neural Networks Acceleration
 
-Implementation with PyTorch.
+![i1](https://github.com/he-y/filter-pruning-geometric-median/blob/master/functions/explain.png)
 
-This implementation is based on [soft-filter-pruning](https://github.com/he-y/soft-filter-pruning).
+**[CVPR 2019 Oral](http://openaccess.thecvf.com/content_CVPR_2019/html/He_Filter_Pruning_via_Geometric_Median_for_Deep_Convolutional_Neural_Networks_CVPR_2019_paper.html)**. 
+
+Implementation with PyTorch. This implementation is based on [soft-filter-pruning](https://github.com/he-y/soft-filter-pruning).
 
 ## Table of Contents
 
@@ -30,7 +32,7 @@ This implementation is based on [soft-filter-pruning](https://github.com/he-y/so
 - TorchVision 0.3.0
 
 ## Models and log files
-The trained models with log files can be found in [Google Drive](https://drive.google.com/drive/folders/1lPhInbd7v3HjK9uOPW_VNjGWWm7kyS8e?usp=sharing).
+The trained models with log files can be found in [Google Drive](https://drive.google.com/drive/folders/1w_Max8L5ICJZSrlha8UybHfICik-iX95?usp=sharing).
 
 The pruned model without zeros (Release later).
 
