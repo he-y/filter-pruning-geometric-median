@@ -10,7 +10,7 @@ Implementation with PyTorch. This implementation is based on [soft-filter-prunin
 
 - [Requirements](#requirements)
 - [Models and log files](#models-and-log-files)
-- [Training ResNet on ImageNet](#training-imagenet)
+- [Training ResNet on ImageNet](#training-resnet-on-imagenet)
   - [Usage of Pruning Training](#usage-of-pruning-training)
   - [Usage of Normal Training](#usage-of-normal-training)
   - [Inference the pruned model with zeros](#inference-the-pruned-model-with-zeros)
@@ -35,13 +35,13 @@ Implementation with PyTorch. This implementation is based on [soft-filter-prunin
 The trained models with log files can be found in [Google Drive](https://drive.google.com/drive/folders/1w_Max8L5ICJZSrlha8UybHfICik-iX95?usp=sharing).
 Specifically:
 
-[Pruning ResNet on ImageNet](https://drive.google.com/drive/u/1/folders/1DOYiOZGQxr94rWsEw73ezz9a-0hcNf-2)
+[models for pruning ResNet on ImageNet](https://drive.google.com/drive/u/1/folders/1DOYiOZGQxr94rWsEw73ezz9a-0hcNf-2)
 
-[Pruning ResNet on CIFAR-10](https://drive.google.com/drive/u/1/folders/1YLhcY487U0ZdGiDHzJBJZOJLFYBhrBoD)
+[models for pruning ResNet on CIFAR-10](https://drive.google.com/drive/u/1/folders/1YLhcY487U0ZdGiDHzJBJZOJLFYBhrBoD)
 
-[Pruning VGGNet on CIFAR-10](https://drive.google.com/drive/u/1/folders/1hGnULraEbz8IjSRZx_juzZnvDTDqDdt-)
+[models for pruning VGGNet on CIFAR-10](https://drive.google.com/drive/u/1/folders/1hGnULraEbz8IjSRZx_juzZnvDTDqDdt-)
 
-[Ablation study](https://drive.google.com/drive/u/1/folders/1PZLOw51n8yvdKO0pzAk_9t6It9Awq6GU)
+[models for ablation study](https://drive.google.com/drive/u/1/folders/1PZLOw51n8yvdKO0pzAk_9t6It9Awq6GU)
 
 The pruned model without zeros, refer to [this issue](https://github.com/he-y/filter-pruning-geometric-median/issues/7).
 
