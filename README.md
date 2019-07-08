@@ -34,7 +34,7 @@ Implementation with PyTorch. This implementation is based on [soft-filter-prunin
 ## Models and log files
 The trained models with log files can be found in [Google Drive](https://drive.google.com/drive/folders/1w_Max8L5ICJZSrlha8UybHfICik-iX95?usp=sharing).
 
-The pruned model without zeros (Release later).
+The pruned model without zeros, refer to [this issue](https://github.com/he-y/filter-pruning-geometric-median/issues/7).
 
 ## Training ResNet on ImageNet
 
