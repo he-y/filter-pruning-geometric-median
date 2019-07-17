@@ -82,14 +82,14 @@ sh function/inference_pruned.sh
 
 #### Scripts to reproduce the results in our paper
 To train the ImageNet model with / without pruning, see the directory `scripts`.
-Full script is [here](https://github.com/he-y/filter_similarity/blob/master/scripts/pruning_imagenet_resnet.sh).
+Full script is [here](https://github.com/he-y/filter-pruning-geometric-median/tree/master/scripts).
 
 
 ## Training ResNet on Cifar-10
 ```bash
 sh scripts/pruning_cifar10.sh
 ```
-Please be care of the hyper-parameter [`layer_end`](https://github.com/he-y/filter_similarity/blob/master/scripts/pruning_cifar10.sh#L4-L9) for different layer of ResNet.
+Please be care of the hyper-parameter [`layer_end`](https://github.com/he-y/filter-pruning-geometric-median/blob/master/scripts/pruning_cifar10.sh#L4-L9) for different layer of ResNet.
 
 Reproduce ablation study of Cifar-10:
 ```bash
@@ -122,7 +122,7 @@ This can improve the accuracy slightly.
 #### Process of ImageNet dataset
 We follow the [Facebook process of ImageNet](https://github.com/facebook/fb.resnet.torch/blob/master/INSTALL.md#download-the-imagenet-dataset).
 Two subfolders ("train" and "val") are included in the "/path/to/ImageNet2012".
-The correspding code is [here](https://github.com/he-y/filter_similarity/blob/master/pruning_imagenet.py#L136-L137).
+The correspding code is [here](https://github.com/he-y/filter-pruning-geometric-median/blob/master/pruning_imagenet.py#L136-L137).
 
 #### FLOPs Calculation
 Refer to the [file](https://github.com/he-y/soft-filter-pruning/blob/master/utils/cifar_resnet_flop.py).
