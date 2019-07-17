@@ -103,13 +103,13 @@ Refer to the directory `VGG_cifar`.
 ```bash
 sh VGG_cifar/scripts/PFEC_train_prune.sh
 ```
-Four function included in the script, including [training baseline](https://github.com/he-y/filter_similarity/tree/master/VGG_cifar/scripts#L3-L12), [pruning from pretrain](https://github.com/he-y/filter_similarity/tree/master/VGG_cifar/scripts#L14-L43), [pruning from scratch](https://github.com/he-y/filter_similarity/tree/master/VGG_cifar/scripts#L45-L54), [finetune the pruend](https://github.com/he-y/filter_similarity/tree/master/VGG_cifar/scripts#L57-L65)
+Four function included in the script, including [training baseline](https://github.com/he-y/filter-pruning-geometric-median/blob/master/VGG_cifar/scripts/PFEC_train_prune.sh#L3-L12), [pruning from pretrain](https://github.com/he-y/filter-pruning-geometric-median/blob/master/VGG_cifar/scripts/PFEC_train_prune.sh#L14-L43), [pruning from scratch](https://github.com/he-y/filter-pruning-geometric-median/blob/master/VGG_cifar/scripts/PFEC_train_prune.sh#L45-L54), [finetune the pruend](https://github.com/he-y/filter-pruning-geometric-median/blob/master/VGG_cifar/scripts/PFEC_train_prune.sh#L57-L65)
 
 #### Our method
 ```bash
 sh VGG_cifar/scripts/pruning_vgg_my_method.sh
 ```
-Including [pruning the pretrained](https://github.com/he-y/filter_similarity/blob/master/VGG_cifar/scripts/pruning_vgg_my_method.sh#L52-L61), [pruning the scratch](https://github.com/he-y/filter_similarity/blob/master/VGG_cifar/scripts/pruning_vgg_my_method.sh#L62-L66).
+Including [pruning the pretrained](https://github.com/he-y/filter-pruning-geometric-median/blob/master/VGG_cifar/scripts/pruning_vgg_my_method.sh#L52-L61), [pruning the scratch](https://github.com/he-y/filter-pruning-geometric-median/blob/master/VGG_cifar/scripts/pruning_vgg_my_method.sh#L62-L66).
 
 ## Notes
 
