@@ -79,6 +79,9 @@ python original_train.py -a resnet50 --save_dir ./snapshots/resnet50-baseline  /
 ```bash
 sh function/inference_pruned.sh
 ```
+#### Inference the pruned model without zeros
+The pruned model without zeros, refer to [this issue](https://github.com/he-y/filter-pruning-geometric-median/issues/7).
+
 
 #### Scripts to reproduce the results in our paper
 To train the ImageNet model with / without pruning, see the directory `scripts`.
