@@ -53,15 +53,15 @@ We train each model from scratch by default. If you wish to train the model with
 Run Pruning Training ResNet (depth 152,101,50,34,18) on Imagenet:
 
 ```bash
-python pruning_train.py -a resnet152 --save_path ./snapshots/resnet152-rate-0.7 --rate_norm 1 --rate_dist 0.4 --layer_begin 0 --layer_end 462 --layer_inter 3  /path/to/Imagenet2012
+python pruning_imagenet.py -a resnet152 --save_path ./snapshots/resnet152-rate-0.7 --rate_norm 1 --rate_dist 0.4 --layer_begin 0 --layer_end 462 --layer_inter 3  /path/to/Imagenet2012
 
-python pruning_train.py -a resnet101 --save_path ./snapshots/resnet101-rate-0.7 --rate_norm 1 --rate_dist 0.4 --layer_begin 0 --layer_end 309 --layer_inter 3  /path/to/Imagenet2012
+python pruning_imagenet.py -a resnet101 --save_path ./snapshots/resnet101-rate-0.7 --rate_norm 1 --rate_dist 0.4 --layer_begin 0 --layer_end 309 --layer_inter 3  /path/to/Imagenet2012
 
-python pruning_train.py -a resnet50  --save_path ./snapshots/resnet50-rate-0.7 --rate_norm 1 --rate_dist 0.4 --layer_begin 0 --layer_end 156 --layer_inter 3  /path/to/Imagenet2012
+python pruning_imagenet.py -a resnet50  --save_path ./snapshots/resnet50-rate-0.7 --rate_norm 1 --rate_dist 0.4 --layer_begin 0 --layer_end 156 --layer_inter 3  /path/to/Imagenet2012
 
-python pruning_train.py -a resnet34  --save_path ./snapshots/resnet34-rate-0.7 --rate_norm 1 --rate_dist 0.4 --layer_begin 0 --layer_end 105 --layer_inter 3  /path/to/Imagenet2012
+python pruning_imagenet.py -a resnet34  --save_path ./snapshots/resnet34-rate-0.7 --rate_norm 1 --rate_dist 0.4 --layer_begin 0 --layer_end 105 --layer_inter 3  /path/to/Imagenet2012
 
-python pruning_train.py -a resnet18  --save_path ./snapshots/resnet18-rate-0.7 --rate_norm 1 --rate_dist 0.4 --layer_begin 0 --layer_end 57 --layer_inter 3  /path/to/Imagenet2012
+python pruning_imagenet.py -a resnet18  --save_path ./snapshots/resnet18-rate-0.7 --rate_norm 1 --rate_dist 0.4 --layer_begin 0 --layer_end 57 --layer_inter 3  /path/to/Imagenet2012
 ```
 Explanation:
  
