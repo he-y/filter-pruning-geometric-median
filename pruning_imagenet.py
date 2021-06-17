@@ -312,14 +312,15 @@ def validate(val_loader, model, criterion, log):
         target_var = torch.autograd.Variable(target, volatile=True)
 
         # compute output
-        output = model(input_var)
-        loss = criterion(output, target_var)
+        with torch.no_graad():
+            output = model(input_var)
+            loss = criterion(output, target_var)
 
-        # measure accuracy and record loss
-        prec1, prec5 = accuracy(output.data, target, topk=(1, 5))
-        losses.update(loss.data[0], input.size(0))
-        top1.update(prec1[0], input.size(0))
-        top5.update(prec5[0], input.size(0))
+          # measure accuracy and record loss
+            prec1, prec5 = accuracy(output.data, target, topk=(1, 5))
+            losses.update(loss.data[0], input.size(0))
+            top1.update(prec1[0], input.size(0))
+            top5.update(prec5[0], input.size(0))
 
         # measure elapsed time
         batch_time.update(time.time() - end)
