@@ -312,7 +312,7 @@ def validate(val_loader, model, criterion, log):
         target_var = torch.autograd.Variable(target, volatile=True)
 
         # compute output
-        with torch.no_graad():
+        with torch.no_grad():
             output = model(input_var)
             loss = criterion(output, target_var)
 
