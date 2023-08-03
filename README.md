@@ -8,9 +8,9 @@ Implementation with PyTorch. This implementation is based on [soft-filter-prunin
 
 
 ## What's New
-FPGM has been re-implemented in [Pytroch](https://github.com/pytorch/pytorch) and [NNI](https://github.com/microsoft/nni).
+FPGM has been re-implemented in [Pytorch](https://github.com/pytorch/pytorch) and [NNI](https://github.com/microsoft/nni).
 
-#### Usage in Pytorch
+### Usage in [Pytorch](https://github.com/pytorch/pytorch)
 
 ```
 from torch.ao.sparsity.pruning._experimental.pruner import FPGM_pruner
@@ -34,7 +34,7 @@ pruned_model = pruner.prune()
 
 See source code [here](https://github.com/pytorch/pytorch/blob/main/torch/ao/pruning/_experimental/pruner/FPGM_pruner.py).
 
-#### Usage in NNI
+### Usage in [NNI](https://github.com/microsoft/nni)
 ```
 from nni.algorithms.compression.pytorch.pruning import FPGMPruner
 config_list = [{
