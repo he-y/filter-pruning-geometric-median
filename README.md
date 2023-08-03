@@ -28,7 +28,7 @@ pruner.prepare(model, config)
 pruner.enable_mask_update = True
 pruner.step()
 
-# fuse mask to model
+# Get real pruned models (without zeros)
 pruned_model = pruner.prune()
 ```
 
