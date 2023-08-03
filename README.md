@@ -6,6 +6,48 @@
 
 Implementation with PyTorch. This implementation is based on [soft-filter-pruning](https://github.com/he-y/soft-filter-pruning).
 
+
+## What's New
+FPGM has been re-implemented in [Pytroch](https://github.com/pytorch/pytorch) and [NNI](https://github.com/microsoft/nni).
+
+#### Usage in Pytorch
+
+```
+from torch.ao.sparsity.pruning._experimental.pruner import FPGM_pruner
+
+# set network-level sparsity: all layers have a sparsity level of 30%
+pruner = FPGMPruner(sparsity_level = 0.3)
+
+# set layer-level sparsity: sparsity_level of conv2d1 = 30%, sparsity_level of conv2d2 = 50%
+config = [
+    {"tensor_fqn": "conv2d1.weight"},
+    {"tensor_fqn": "conv2d2.weight", "sparsity_level": 0.5}
+]
+
+pruner.prepare(model, config)
+pruner.enable_mask_update = True
+pruner.step()
+
+# fuse mask to model
+pruned_model = pruner.prune()
+```
+
+See source code [here](https://github.com/pytorch/pytorch/blob/main/torch/ao/pruning/_experimental/pruner/FPGM_pruner.py).
+
+#### Usage in NNI
+```
+from nni.algorithms.compression.pytorch.pruning import FPGMPruner
+config_list = [{
+    'sparsity': 0.5,
+    'op_types': ['Conv2d']
+}]
+pruner = FPGMPruner(model, config_list)
+pruner.compress()
+```
+
+See explanation [here](https://nni.readthedocs.io/en/v2.1/Compression/Pruner.html#fpgm-pruner).
+
+
 ## Table of Contents
 
 - [Requirements](#requirements)
