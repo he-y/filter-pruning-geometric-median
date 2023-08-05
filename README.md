@@ -32,7 +32,7 @@ pruner.step()
 pruned_model = pruner.prune()
 ```
 
-See source code [here](https://github.com/pytorch/pytorch/blob/main/torch/ao/pruning/_experimental/pruner/FPGM_pruner.py).
+See source code [here](https://github.com/pytorch/pytorch/blob/main/torch/ao/pruning/_experimental/pruner/FPGM_pruner.py) and official test code [here](https://github.com/pytorch/pytorch/blob/main/test/ao/sparsity/test_structured_sparsifier.py#L921-L1041).
 
 ### Usage in [NNI](https://github.com/microsoft/nni)
 ```
