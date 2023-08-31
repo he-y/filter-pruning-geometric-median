@@ -148,7 +148,7 @@ Refer to the directory `VGG_cifar`.
 ```bash
 sh VGG_cifar/scripts/PFEC_train_prune.sh
 ```
-Four function included in the script, including [training baseline](https://github.com/he-y/filter-pruning-geometric-median/blob/master/VGG_cifar/scripts/PFEC_train_prune.sh#L3-L12), [pruning from pretrain](https://github.com/he-y/filter-pruning-geometric-median/blob/master/VGG_cifar/scripts/PFEC_train_prune.sh#L14-L43), [pruning from scratch](https://github.com/he-y/filter-pruning-geometric-median/blob/master/VGG_cifar/scripts/PFEC_train_prune.sh#L45-L54), [finetune the pruend](https://github.com/he-y/filter-pruning-geometric-median/blob/master/VGG_cifar/scripts/PFEC_train_prune.sh#L57-L65)
+Four function included in the script, including [training baseline](https://github.com/he-y/filter-pruning-geometric-median/blob/master/VGG_cifar/scripts/PFEC_train_prune.sh#L3-L12), [pruning from pretrain](https://github.com/he-y/filter-pruning-geometric-median/blob/master/VGG_cifar/scripts/PFEC_train_prune.sh#L14-L43), [pruning from scratch](https://github.com/he-y/filter-pruning-geometric-median/blob/master/VGG_cifar/scripts/PFEC_train_prune.sh#L45-L54), [finetune the pruned](https://github.com/he-y/filter-pruning-geometric-median/blob/master/VGG_cifar/scripts/PFEC_train_prune.sh#L57-L65)
 
 #### Our method
 ```bash
@@ -167,7 +167,7 @@ This can improve the accuracy slightly.
 #### Process of ImageNet dataset
 We follow the [Facebook process of ImageNet](https://github.com/facebook/fb.resnet.torch/blob/master/INSTALL.md#download-the-imagenet-dataset).
 Two subfolders ("train" and "val") are included in the "/path/to/ImageNet2012".
-The correspding code is [here](https://github.com/he-y/filter-pruning-geometric-median/blob/master/pruning_imagenet.py#L136-L137).
+The corresponding code is [here](https://github.com/he-y/filter-pruning-geometric-median/blob/master/pruning_imagenet.py#L136-L137).
 
 #### FLOPs Calculation
 Refer to the [file](https://github.com/he-y/soft-filter-pruning/blob/master/utils/cifar_resnet_flop.py).
